@@ -2,7 +2,10 @@
 <ModMetaData>
   <name>Foot Traffic Heatmap</name>
   <modVersion IgnoreIfNoMatchingField="True">1.5.4084.20240504Z</modVersion>
-  <author>Missionz3r0</author>
+  <authors>
+    <li>Cliffyq</li>
+    <li>Missionz3r0</li>
+  </authors>
   <packageId>missionz3r0.FootTrafficHeatmap</packageId>
   <description>
 Adds an overlay to show your colonists' foot traffic heatmap. You can see where they've been recently, which areas are visited frequently and optimize your base based on the info.
