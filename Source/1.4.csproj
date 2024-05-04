@@ -12,9 +12,10 @@
     <ProjectGuid>{9100511D-87A1-43B7-847F-216649EAC8A2}</ProjectGuid>
 	</PropertyGroup>
   <ItemGroup>
+    <Content Include="ModData\Textures\icon.png" />
+    <None Include="..\LICENSE" Pack="true" />
     <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*" />
     <PackageReference Include="Lib.Harmony" Version="2.3.*" ExcludeAssets="runtime" />
-    <None Include="..\LICENSE" Pack="true" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 </Project>

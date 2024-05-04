@@ -28,9 +28,12 @@ cp -af ./Scripts "$DESTINATION"
 mkdir "$DESTINATION/Source"
 cp -af ./Source "$DESTINATION"
 
+mkdir "$DESTINATION/Textures"
+cp -af ./Textures "$DESTINATION"
+
 rm -r "$DESTINATION/Source/obj"
 rm -r "$DESTINATION/Source/.vs"
 
 cp -f ./Dockerfile "$DESTINATION"
 cp -f ./LICENSE "$DESTINATION"
-cp -f ./readme.md "$DESTINATION"
+cp -f ./README.md "$DESTINATION"
