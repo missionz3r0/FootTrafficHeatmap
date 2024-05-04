@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0">
   <PropertyGroup>
-    <BaseIntermediateOutputPath>..\obj\1.2\</BaseIntermediateOutputPath>
-    <MSBUildProjectExtensionsPath>..\obj\1.2\</MSBUildProjectExtensionsPath>
+    <BaseIntermediateOutputPath>..\..\obj\1.2\</BaseIntermediateOutputPath>
+    <MSBUildProjectExtensionsPath>..\..\obj\1.2\</MSBUildProjectExtensionsPath>
   </PropertyGroup>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <PropertyGroup>
     <AssemblyName>FootTrafficHeatmap</AssemblyName>
     <DefineConstants>v1_2</DefineConstants>
-    <OutputPath>..\1.2\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.2\Assemblies\</OutputPath>
     <ProjectGuid>{488121AE-4D43-420E-B408-BD4C24C3971E}</ProjectGuid>
 	</PropertyGroup>
   <ItemGroup>
-    <Content Include="..\Textures\icon.png" />
-    <None Include="..\LICENSE" Pack="true" />
+    <None Include="..\..\LICENSE" Pack="true" />
     <PackageReference Include="Krafs.Rimworld.Ref" Version="1.2.*" />
     <PackageReference Include="Lib.Harmony" Version="2.3.*" ExcludeAssets="runtime" />
   </ItemGroup>
