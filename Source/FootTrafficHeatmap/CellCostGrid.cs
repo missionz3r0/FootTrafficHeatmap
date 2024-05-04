@@ -67,14 +67,10 @@ namespace TrafficHeatmap
         public float GetNormalizedCost(int index)
         {
             if (this.Normalizer != null)
-            {
                 return this.Normalizer.Normalize(this.grid[index]);
-            }
-            else
-            {
-                Log.Error("Normalizer not found.");
-                return index;
-            }
+
+            Log.Error("Normalizer not found.");
+            return index;
         }
 
         public float GetRawCost(int index)
@@ -123,7 +119,11 @@ namespace TrafficHeatmap
                 this.tmpByteArrayForScribe = MapSerializeUtility.SerializeUshort(this.map, (IntVec3 c) => CellCostGrid.CellCostFloatToShort(this.GetCellCost(c)));
             }
 
+#if !v1_5
             DataExposeUtility.ByteArray(ref this.tmpByteArrayForScribe, "grid");
+#else
+            DataExposeUtility.LookByteArray(ref this.tmpByteArrayForScribe, "grid");
+#endif
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {

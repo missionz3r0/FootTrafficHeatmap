@@ -195,7 +195,7 @@ namespace TrafficHeatmap
 
         private Gradient GetGradient()
         {
-            var gradient = new Gradient();
+            Gradient localGradient = new Gradient();
 
             var colorKey = new GradientColorKey[4];
             colorKey[0].color = Color.blue;
@@ -213,8 +213,8 @@ namespace TrafficHeatmap
             alphaKey[1].alpha = 1f;
             alphaKey[1].time = 1f;
 
-            gradient.SetKeys(colorKey, alphaKey);
-            return gradient;
+            localGradient.SetKeys(colorKey, alphaKey);
+            return localGradient;
         }
 
         private void GlobalDecay()

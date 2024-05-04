@@ -5,7 +5,7 @@ using Verse;
 namespace TrafficHeatmap
 {
     [StaticConstructorOnStartup]
-    public class Resources
+    public static class Resources
     {
         public static readonly Texture2D Icon = ContentFinder<Texture2D>.Get("icon");
 

@@ -6,7 +6,7 @@ using Verse.AI;
 namespace TrafficHeatmap
 {
     [HarmonyPatch(typeof(Pawn_PathFollower))]
-    internal class Patch
+    internal static class Patch
     {
         [HarmonyPostfix]
         [HarmonyPatch("SetupMoveIntoNextCell")]

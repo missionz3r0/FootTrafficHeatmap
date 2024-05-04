@@ -67,12 +67,12 @@ namespace TrafficHeatmap
             this.UpdateFromSettings(settings);
         }
 
-        public override void OnUpdateSingleValue(float value)
+        public override void OnUpdateSingleValue(float cost)
         {
-            if (value >= this.minThreshold)
+            if (cost >= this.minThreshold)
             {
-                this.min = Math.Min(this.min, value);
-                this.max = Math.Max(this.max, value);
+                this.min = Math.Min(this.min, cost);
+                this.max = Math.Max(this.max, cost);
             }
         }
 
