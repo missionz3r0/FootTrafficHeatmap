@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
     <name>Foot Traffic Heatmap</name>
+    <modVersion IgnoreIfNoMatchingField="True">1.5.4084.20240504Z</modVersion>
     <author>Cliffyq</author>
     <packageId>Cliffyq.FootTrafficHeatmap</packageId>
     <description>
