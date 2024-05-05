@@ -6,7 +6,7 @@
     <li>Cliffyq</li>
     <li>Missionz3r0</li>
   </authors>
-  <packageId>missionz3r0.foot_traffic_heatmap</packageId>
+  <packageId>missionz3r0.FootTrafficHeatmap</packageId>
   <description>
 Adds an overlay to show colonist foot traffic.
 
