@@ -230,7 +230,7 @@ namespace TrafficHeatmap
 
         private void RemoveInvalidPawns()
         {
-            IEnumerable<Pawn> toRemove = this.pawnToCellCostGridMap.Keys.Where(pawn => !pawn.IsColonist || pawn.Dead);
+            IEnumerable<Pawn> toRemove = this.pawnToCellCostGridMap.Keys.Where(pawn => !pawn.IsColonist || pawn.Dead).ToList();
 
             if (toRemove.Any())
             {
